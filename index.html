@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- First index of the page -->
+
+    <div class="container">
+        <div class="Con1" id="id1"> ROCK</div>
+        <div class="Con1" id="id2"> PAPER</div>
+        <div class="Con1" id="id3"> SCISSOR</div>
+        <div class="Con2" id="id4">Computer Score</div>
+        <div class="Con2" id="id5">Your Score</div>
+        <div class="scorep">0</div>
+        <div class="scorec">0</div>
+        <div class="container2">
+            <button class="button button1"  ><img src=".\image\Rock.png" alt=""></button>
+            <button class="button button2"  ><img src=".\image\Scissor.png" alt=""></button>
+            <button class="button button3"  ><img src=".\image\Paper.png" alt=""></button>
+            
+            <div class="Line" id="Line1"><img src="\image\Line 1.png" alt=""></div>
+            <div class="Line" id="Line2"><img src="\image\Line 2.png" alt=""></div>
+            <div class="Line" id="Line3"><img src="\image\Line 3.png" alt=""></div> 
+        </div>
+
+<!-- Rules -->
+
+        <div class="RuleButton" >
+            <button id="Rule" class="Rule1" onclick= "Description"> Rules </button>
+
+            <ul id="Description" class="Description">
+                <h2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Game Rules</h2>
+
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissor."</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the game</li>
+                <li>If both players law down the same hand, each player lays down another hand</li>
+
+            </ul>
+
+            <button id="cross"><img src="\image\x.png" alt=""></button>
+        </div>
+    </div>
+
+<!-- Winning Class -->
+
+    <div class="winner">
+        <div class="win1">
+            <div id="t1">You Picked</div>
+            <div id="t2">PC Picked</div>
+            <h4 id="youwin">YOU&nbspWIN</h4>
+            <h3 id="a2">AGAINST&nbspPC</h3>
+            <button id="PA">PLAY AGAIN</button> 
+        </div>
+
+        <div id="Button2">
+            <button id="Rule2">RULES</button>
+            <a href="http://127.0.0.1:5500/index2.html"> <button id="Next">NEXT</button> </a>
+        </div>
+    </div>
+
+<!-- Loosing Class -->
+
+    <div class="loose">
+        <div class="loose1">
+            <div id="t1">You Picked</div>
+            <div id="t2">PC Picked</div>
+            <h4 id="youloose">YOU&nbspLOOSE</h4>
+            <h3 id="a2">AGAINST&nbspPC</h3>
+            <a href=""></a><button id="PA">PLAY AGAIN</button>
+            <div class="show"></div>
+        </div>
+    </div>
+
+<!-- Tie Class -->
+
+    <div class="tie">
+        <div class="tie1">
+            <div id="t1">You Picked</div>
+            <div id="t2">PC Picked</div>
+            <div id="Tie">TIE UP</div>
+            <button id="Replay">REPLAY</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
